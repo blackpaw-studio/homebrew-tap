@@ -4,6 +4,12 @@ class Leo < Formula
   version "0.1.0"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/blackpaw-studio/homebrew-tap/releases/download/leo-0.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "365a893f8f03d32bb6fd434f23de7f3b5f1ab15b0cbba6773de190a04a3de60f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d90b1ad493760ba010d9299dce0b0c847902ce970a84ff4166c7d8cc46a0b964"
+  end
+
   depends_on "tmux"
 
   on_macos do
