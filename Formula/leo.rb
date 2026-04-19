@@ -5,23 +5,23 @@
 class Leo < Formula
   desc "Supervise persistent Claude Code agents with scheduling and channel plugins"
   homepage "https://github.com/blackpaw-studio/leo"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/blackpaw-studio/leo/releases/download/v0.3.1/leo_0.3.1_darwin_amd64.tar.gz"
-      sha256 "5a7dafee82550f1b47030c45cc8da49e76d3f5258d2cd190510f6176c71a6e00"
+      url "https://github.com/blackpaw-studio/leo/releases/download/v0.3.2/leo_0.3.2_darwin_amd64.tar.gz"
+      sha256 "3a5be95f5d4b04645da840a88f9a3e714a9159c7ce03740e57a994ae5daa45b3"
 
       define_method(:install) do
         bin.install "leo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/blackpaw-studio/leo/releases/download/v0.3.1/leo_0.3.1_darwin_arm64.tar.gz"
-      sha256 "c46dd2c168b9458307c70907c0b52dc4c19f6b915815c04a23cee2e3452f5632"
+      url "https://github.com/blackpaw-studio/leo/releases/download/v0.3.2/leo_0.3.2_darwin_arm64.tar.gz"
+      sha256 "1dcc48366f0e9baff9dbee2dc2887fc2df185fcae140e00e27bdd84b3029f4bd"
 
       define_method(:install) do
         bin.install "leo"
@@ -31,15 +31,15 @@ class Leo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackpaw-studio/leo/releases/download/v0.3.1/leo_0.3.1_linux_amd64.tar.gz"
-      sha256 "c75fa285aebfc84393c8fc71788333abbcdf4f0ca861484be1e41a8fc38a7593"
+      url "https://github.com/blackpaw-studio/leo/releases/download/v0.3.2/leo_0.3.2_linux_amd64.tar.gz"
+      sha256 "6d9878da9f2c60288a1c0a1a1d5ebd4352a62f50eb78312f9a146bd25916d5e0"
       define_method(:install) do
         bin.install "leo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/blackpaw-studio/leo/releases/download/v0.3.1/leo_0.3.1_linux_arm64.tar.gz"
-      sha256 "c1e83628c933f0695d090815e16e1397ae7ec7ef6aff80627182c5b1fced2a54"
+      url "https://github.com/blackpaw-studio/leo/releases/download/v0.3.2/leo_0.3.2_linux_arm64.tar.gz"
+      sha256 "ed6429a1143dd8cde325359c063be610b5a483b7bd5b26f7031c3280d595846d"
       define_method(:install) do
         bin.install "leo"
       end
